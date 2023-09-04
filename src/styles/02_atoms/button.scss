@@ -1,0 +1,42 @@
+/* styles.css */
+.custom-button {
+    padding: 10px 20px;
+    border: 1px solid $primary-blue;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .primary-blue {
+    background-color: $primary-blue;
+    color: white;
+  }
+  
+  .secondary-blue {
+    background-color: #a9d3ff;
+    color: white;
+  }
+  
+  .white {
+    background-color: white;
+    color:$primary-blue; /* Change the text color as needed */
+  }
+  
+  .primary-grey {
+    background-color: $primary-grey;
+    color: white;
+  }
+  
+  .secondary-grey {
+    background-color: #6c756b;
+    color: white;
+  }
+  
+  /* Add hover effect and box shadow */
+  .custom-button:hover {
+    background-color: $primary-grey; /* Change the color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    color:white;
+    border: 1px white solid;
+  }

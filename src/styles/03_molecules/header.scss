@@ -1,0 +1,11 @@
+.header {
+    position: sticky;
+    max-width: 1920px;;
+    height:7rem; 
+    background-color: $secondairy-blue;
+    padding: 10px 20px; /* Padding for inner content */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    justify-content: space-between;
+}
