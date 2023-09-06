@@ -1,9 +1,14 @@
 import React from 'react'
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
+
 
 const Searchbar = ( { searchText , setSearchText }) => {
 
+  const navigate = useNavigate();
+ 
   const updateSearchText = (e) => {
+    navigate('/search')
     const newValue = e.target.value
     setSearchText(newValue);
     }

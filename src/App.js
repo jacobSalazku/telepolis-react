@@ -8,17 +8,21 @@ import { useState , useEffect } from 'react';
 
 
 function App() {
- 
+  
   const [searchResults,setSearchtresults] = useState([]);
   const [searchText,setSearchText] = useState('');
-  useEffect(()=> {
-    console.log(searchText,'is the search text')
-    fetch(`https://api.themoviedb.org/3/search/movie?query=${searchText}&api_key=cb8b5baf6bfe0c3929a841b05a0f27e4`)
-    .then(response =>response.json())
-    .then( data => {
 
-      console.log(data);
-    })
+  useEffect(()=> {
+    if(searchText) {
+      console.log(searchText,'is the search text')
+      fetch(`https://api.themoviedb.org/3/search/movie?query=${searchText}&api_key=cb8b5baf6bfe0c3929a841b05a0f27e4`)
+      .then(response =>response.json())
+      .then( data => {
+
+        console.log(data);
+        setSearchtresults(data.results)
+     })
+    }  
   },[searchText])
 
   return (
