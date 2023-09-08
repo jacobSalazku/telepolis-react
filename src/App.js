@@ -12,6 +12,7 @@ function App() {
   const [searchResults,setSearchtresults] = useState([]);
   const [searchText,setSearchText] = useState('');
 
+
   useEffect(()=> {
     if(searchText) {
       console.log(searchText,'is the search text')
@@ -22,8 +23,12 @@ function App() {
         console.log(data);
         setSearchtresults(data.results)
      })
+   
+
     }  
   },[searchText])
+ 
+
 
   return (
 

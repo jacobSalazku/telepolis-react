@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^7.0.3",
     "node-sass-glob-importer": "^5.3.3",

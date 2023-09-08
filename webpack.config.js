@@ -34,6 +34,16 @@ module.exports = {
           } 
         ],
       },
+      {
+        test: /\.(jpg|png|gif|svg)$/, // This rule applies to image files
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/', // Adjust the output path as needed
+          },
+        },
+      },
     ],
   },
 };

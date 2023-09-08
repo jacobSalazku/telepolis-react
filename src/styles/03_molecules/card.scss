@@ -1,0 +1,47 @@
+
+.card {
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height:33rem;
+  
+}
+
+/* Style for the card image */
+.card-img-top {
+  box-shadow: 0 px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-height: 350px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 18rem;
+}
+
+/* Style for the card title */
+.card-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
