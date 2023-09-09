@@ -11,8 +11,7 @@ function App() {
   
   const [searchResults,setSearchtresults] = useState([]);
   const [searchText,setSearchText] = useState('');
-
-
+ 
   useEffect(()=> {
     if(searchText) {
       console.log(searchText,'is the search text')
@@ -27,6 +26,8 @@ function App() {
 
     }  
   },[searchText])
+
+  
  
 
 
@@ -38,7 +39,7 @@ function App() {
           <div>
             <Routes>
               <Route path="/"  element={<Home/>}/> 
-              <Route path="/coming-soon" element={<ComingSoon/>}/>
+              <Route path="/coming-soon" element={<ComingSoon  />}/>
               <Route path="/search" element={<SearchView  keyword={searchText} searchResults={searchResults }/>}/>
             </Routes>
           </div>

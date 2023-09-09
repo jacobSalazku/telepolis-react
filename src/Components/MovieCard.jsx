@@ -13,6 +13,7 @@ const MovieCard = ({ movie }) => {
       
       <div className="card-body">
         <h5 className="card-title flex-row-center">{movie.original_title}</h5>
+        <p>Release Date: {new Date(movie.release_date).toLocaleDateString()}</p>
         <Button text="See more" className="custom-button primary-blue flex-row-center" />
       </div>
     </div>
