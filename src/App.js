@@ -1,10 +1,11 @@
 import './App.scss';
-import ComingSoon from './pages/Coming-soon';
+import Movies from './pages/Movies';
 import { BrowserRouter as  Router, Routes , Route } from'react-router-dom';
 import SearchView from './pages/SearchView';
 import Home from './pages/Home';
 import Header from './Components/Header';
 import { useState , useEffect } from 'react';
+import ComingSoon from './pages/Coming-soon';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               <Route path="/"  element={<Home/>}/> 
               <Route path="/coming-soon" element={<ComingSoon  />}/>
               <Route path="/search" element={<SearchView  keyword={searchText} searchResults={searchResults }/>}/>
+              <Route path="/movies" element={<Movies  />}/>
             </Routes>
           </div>
       </div>

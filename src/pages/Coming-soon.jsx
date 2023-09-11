@@ -16,20 +16,19 @@ const ComingSoon = () => {
       });
   }, []); // Empty dependency array to fetch data only once
 
-  const resultHtml = upComingMovies
-  .filter((movie) => {
-    const releaseDate = new Date(movie.release_date);
-    const currentDate = new Date();
-    return releaseDate > currentDate; // Filter out movies with a release date in the past or today
-  })
-  .map((obj, i) => <MovieCard movie={obj} key={i} />);
+ 
+
+  const resultHtml = upComingMovies.map((obj, i) => (
+    <MovieCard  showReleaseDate={true} movie={obj} key={i} /> 
+    
+  ))
     
 
   return (
     <>
       <div>
         <h1>
-          <Hero text="Coming soon" />
+          <Hero text="in Theaters" />
         </h1>
       </div>
 
@@ -38,8 +37,10 @@ const ComingSoon = () => {
             <h2>Loading...</h2>
           </div>
       : 
+      
         <div className='flex-row-center' >
           {resultHtml}
+
          
         </div>
       }
