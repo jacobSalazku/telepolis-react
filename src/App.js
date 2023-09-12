@@ -7,16 +7,17 @@ import Header from './Components/Header';
 import { useState , useEffect } from 'react';
 import ComingSoon from './pages/Coming-soon';
 
-
+const API_key = process.env.REACT_APP_API_KEY;
 function App() {
   
   const [searchResults,setSearchtresults] = useState([]);
   const [searchText,setSearchText] = useState('');
  
+
   useEffect(()=> {
     if(searchText) {
       console.log(searchText,'is the search text')
-      fetch(`https://api.themoviedb.org/3/search/movie?query=${searchText}&api_key=cb8b5baf6bfe0c3929a841b05a0f27e4`)
+      fetch(`https://api.themoviedb.org/3/search/movie?query=${searchText}&api_key=${API_key}`)
       .then(response =>response.json())
       .then( data => {
 
@@ -40,9 +41,9 @@ function App() {
           <div>
             <Routes>
               <Route path="/"  element={<Home/>}/> 
-              <Route path="/coming-soon" element={<ComingSoon  />}/>
+              <Route path="/in-theaters" element={<ComingSoon  API_key={API_key} />}/>
               <Route path="/search" element={<SearchView  keyword={searchText} searchResults={searchResults }/>}/>
-              <Route path="/movies" element={<Movies  />}/>
+              <Route path="/movies" element={<Movies API_key={API_key} />}/>
             </Routes>
           </div>
       </div>

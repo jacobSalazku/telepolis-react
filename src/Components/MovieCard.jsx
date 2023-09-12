@@ -7,11 +7,16 @@ const MovieCard = ({ movie, showReleaseDate }) => {
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : imgPlaceholder;
 
+// movie title characters
+  const truncatedTitle = movie.original_title.length > 35
+    ? movie.original_title.slice(0, 35) + '...' // Add ellipsis if truncated
+    : movie.original_title;
+
   return (
     <div className="card flex-column">
       <img src={posterUrl} className="card-img-top" alt={movie.original_title} />
       <div className="card-body">
-        <h5 className="card-title flex-row-center">{movie.original_title}</h5>
+        <h5 className="card-title flex-row-center">{truncatedTitle}</h5>
         {showReleaseDate && movie.release_date && (
           <p>Release Date: {new Date(movie.release_date).toLocaleDateString()}</p>
         )}
@@ -22,7 +27,4 @@ const MovieCard = ({ movie, showReleaseDate }) => {
 };
 
 export default MovieCard;
-
-
-
 
