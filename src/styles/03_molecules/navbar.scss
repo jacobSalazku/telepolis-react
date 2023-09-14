@@ -3,7 +3,7 @@
 }
 /* Style the navigation links */
 .nav a {
-  color: $secondairy-grey; /* Text color */
+  color: black; /* Text color */
   text-decoration: none; /* Remove underlines */
   padding: 15px 30px; /* Increase padding for more space */
   font-size: 25px; /* Increase font size */
@@ -17,6 +17,6 @@
 .nav a:hover {
 
   transform: scale(1.05); /* Increase size on hover */
-  color: $primary-grey; /* Change text color on hover */
+  color: $white; /* Change text color on hover */
    
 }

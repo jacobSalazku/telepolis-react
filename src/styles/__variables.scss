@@ -1,6 +1,16 @@
 
 $primary-blue:#96C5F7;
 $secondairy-blue:#A9D3FF;
+$blue:#C4D7F2;
+$cream:#F0F7EE;
 $white:#F2F4FF;
+$grey:#91A8A4;
+$dim-grey:#776871;
+$cyan:#AFDEDC; 
 $primary-grey:#93ACB5;
-$secondairy-grey:#a19b9b;
+$secondairy-grey:#1b1212;
+
+ $gradient: linear-gradient(to bottom, #FF5733, #FFC300); /* Replace the colors with your desired gradient */
+  .gradient{
+    background-color:$gradient ;
+  }

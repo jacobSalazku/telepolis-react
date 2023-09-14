@@ -1,7 +1,7 @@
 /* styles.css */
 .custom-button {
     padding: 10px 20px;
-    border: 1px solid $primary-blue;
+    border: 1px solid $blue;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
@@ -9,7 +9,7 @@
   }
   
   .primary-blue {
-    background-color: $primary-blue;
+    background-color: $blue;
     color: white;
   }
   
@@ -35,7 +35,7 @@
   
   /* Add hover effect and box shadow */
   .custom-button:hover {
-    background-color: $primary-grey; /* Change the color on hover */
+    background-color:black; /* Change the color on hover */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
     color:white;
     border: 1px white solid;
