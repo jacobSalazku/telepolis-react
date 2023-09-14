@@ -11,7 +11,7 @@ const Searchbar = ( { searchText , setSearchText }) => {
     navigate('/search')
     const newValue = e.target.value
     setSearchText(newValue);
-    }
+  }
     return (
   
      <div className='search flex-row'>

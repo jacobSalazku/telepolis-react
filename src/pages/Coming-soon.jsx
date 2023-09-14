@@ -14,12 +14,14 @@ const ComingSoon = ( { API_key }) => {
         console.log(data);
         setIsLoading(false);
         setUpComingMovies(data.results);
-      });
+      }
+    );
   }, []); // Empty dependency array to fetch data only once
 
  
 
   const resultHtml = upComingMovies.map((obj, i) => (
+
     <MovieCard  showReleaseDate={true} movie={obj} key={i} /> 
     
   ))
@@ -28,9 +30,9 @@ const ComingSoon = ( { API_key }) => {
   return (
     <>
       <div>
-        <h1>
+       
           <Hero text="in Theaters" />
-        </h1>
+       
       </div>
 
       {isLoading ? 
@@ -40,8 +42,8 @@ const ComingSoon = ( { API_key }) => {
       : 
       
         <div className='flex-row-center' >
+          
           {resultHtml}
-
          
         </div>
       }

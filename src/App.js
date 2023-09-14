@@ -43,7 +43,7 @@ function App() {
               <Route path="/"  element={<Home/>}/> 
               <Route path="/in-theaters" element={<ComingSoon  API_key={API_key} />}/>
               <Route path="/search" element={<SearchView  keyword={searchText} searchResults={searchResults }/>}/>
-              <Route path="/movies" element={<Movies API_key={API_key} />}/>
+              <Route path="/movies" element={<Movies API_key={API_key}  />}/>
             </Routes>
           </div>
       </div>

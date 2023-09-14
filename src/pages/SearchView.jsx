@@ -5,9 +5,10 @@ import MovieCard from '../Components/MovieCard';
 const SearchView = ({ keyword, searchResults }) => {
   const title = `You are searching for ${keyword}`;
   const notFound =`${keyword} is not found`
+
   const resultHtml = searchResults.map((obj, i) => {
     return <MovieCard showReleaseDate={false} movie={obj} key={i} />
-});
+  });
  
   return (
     <>

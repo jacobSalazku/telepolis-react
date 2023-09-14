@@ -1,24 +1,22 @@
-.nav{
+.nav {
   margin: 0 auto;
 }
 /* Style the navigation links */
 .nav a {
-  color: $white; /* Text color */
+  color: $secondairy-grey; /* Text color */
   text-decoration: none; /* Remove underlines */
   padding: 15px 30px; /* Increase padding for more space */
   font-size: 25px; /* Increase font size */
   transition: color 0.3s ease;
   font-weight: 500;
 
-  /* Add text shadow */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, shadow color */
+  
 }
 
 /* Hover effect for the links */
 .nav a:hover {
 
-
-    transform: scale(1.05); /* Increase size on hover */
-    color: $primary-grey; /* Change text color on hover */
+  transform: scale(1.05); /* Increase size on hover */
+  color: $primary-grey; /* Change text color on hover */
    
 }
