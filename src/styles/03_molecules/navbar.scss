@@ -9,14 +9,10 @@
   font-size: 25px; /* Increase font size */
   transition: color 0.3s ease;
   font-weight: 500;
-
-  
 }
-
 /* Hover effect for the links */
 .nav a:hover {
-
-  transform: scale(1.05); /* Increase size on hover */
   color: $white; /* Change text color on hover */
-   
+  background-color: $blue; /* Add a background color on hover */
+  transform: scale(1.05); /* Increase size on hover */
 }
