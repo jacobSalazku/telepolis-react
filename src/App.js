@@ -7,7 +7,7 @@ import Header from './Components/Header';
 import { useState , useEffect } from 'react';
 import ComingSoon from './pages/Coming-soon';
 
-const API_key = process.env.REACT_APP_API_KEY;
+const API_key = process.env.TMDB_APP_API_KEY;
 function App() {
   
   const [searchResults,setSearchtresults] = useState([]);
